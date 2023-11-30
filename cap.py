@@ -1,13 +1,14 @@
 import cadquery as cq
-result = cq.Workplane("XY" ).box(3, 3, 0.5).edges("|Z").fillet(0.125)
+
+result = cq.Workplane("XY").box(3, 3, 0.5).edges("|Z").fillet(0.125)
 
 
 import cadquery as cq
 
 # Dimensions
 outer_diameter = 52  # Outer diameter of the cap
-inner_diameter =1  # Inner diameter of the cap
-height = 50        # Height of the cap
+inner_diameter = 1  # Inner diameter of the cap
+height = 50  # Height of the cap
 
 # Create a cylinder for the main body
 body = cq.Workplane("XY").circle(outer_diameter / 2).extrude(height)
