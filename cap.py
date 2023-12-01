@@ -3,8 +3,6 @@ import cadquery as cq
 result = cq.Workplane("XY").box(3, 3, 0.5).edges("|Z").fillet(0.125)
 
 
-import cadquery as cq
-
 # Dimensions
 outer_diameter = 52  # Outer diameter of the cap
 inner_diameter = 1  # Inner diameter of the cap
@@ -29,4 +27,4 @@ top_surface = top_surface.translate((0, 0, height))
 body = body.union(top_surface)
 
 # Render the bottle cap
-show_object(body)
+piece = body

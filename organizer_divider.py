@@ -11,4 +11,4 @@ pts = [
     (4, 68),
     (4, 0),
 ]
-l = cq.Workplane("front").polyline(pts).close().extrude(height)
+piece = cq.Workplane("front").polyline(pts).close().extrude(height)

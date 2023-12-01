@@ -11,5 +11,5 @@ pts = [
     (4.2, 0),
 ]
 holder_radius = 2.7 / 2
-l = cq.Workplane("front").polyline(pts).close().extrude(height)
-l = l.faces("<X").workplane().center(-3.35, 2).circle(holder_radius).extrude(5.5)
+piece = cq.Workplane("front").polyline(pts).close().extrude(height)
+piece = piece.faces("<X").workplane().center(-3.35, 2).circle(holder_radius).extrude(5.5)

@@ -57,4 +57,4 @@ def weird_triangle():
     return rounded_cube
 
 
-show_object(weird_triangle())
+piece = weird_triangle()
